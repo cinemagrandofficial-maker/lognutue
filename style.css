@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 
@@ -1025,4 +1026,70 @@ footer a {
 .meet-btn:hover { transform: rotate(-2deg) scale(1.03); }
 @media (max-width: 700px) {
   .meet { padding: 64px 20px; }
+}
+
+
+/* OBLIK identity refinements */
+
+.topbar {
+  grid-template-columns: 1fr auto 1fr;
+  min-height: 104px;
+  padding: 18px 34px;
+}
+.topbar-spacer { display: block; }
+.brand {
+  justify-self: center;
+  font-family: 'Syne', 'Manrope', sans-serif;
+  font-size: clamp(42px, 5.2vw, 68px);
+  font-weight: 800;
+  line-height: .88;
+  letter-spacing: -.105em;
+  transform: translateX(-.045em);
+}
+.brand span {
+  top: -1.8em;
+  margin-left: 5px;
+  font-size: 9px;
+  letter-spacing: 0;
+}
+.location { font-size: 10px; }
+
+.ticker-shell {
+  margin-top: -72px;
+  padding-bottom: 48px;
+}
+.ticker {
+  padding: 25px 0 27px;
+  background: var(--acid);
+  transform: rotate(-2.3deg) scale(1.12);
+  box-shadow: 0 12px 34px rgba(200, 255, 53, .13);
+}
+.ticker-track {
+  gap: 38px;
+  font-family: 'Syne', 'Manrope', sans-serif;
+  font-size: clamp(22px, 2.3vw, 32px);
+  font-weight: 800;
+  letter-spacing: -.055em;
+}
+.ticker-track b {
+  font-size: 21px;
+  line-height: 1;
+}
+@media (max-width: 800px) {
+  .topbar {
+    min-height: 82px;
+    padding: 16px 20px;
+  }
+  .brand { font-size: clamp(38px, 10vw, 52px); }
+  .location { font-size: 8px; }
+  .ticker-shell {
+    margin-top: -45px;
+    padding-bottom: 26px;
+  }
+  .ticker {
+    padding: 19px 0 21px;
+    transform: rotate(-2deg) scale(1.08);
+  }
+  .ticker-track { gap: 24px; font-size: 21px; }
+  .ticker-track b { font-size: 16px; }
 }
