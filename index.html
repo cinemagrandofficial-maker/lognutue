@@ -17,7 +17,7 @@
       <path d="M4 16 16 4M7 4h9v9" />
     </svg></a></div>
 </section>
-<div class="ticker-shell"><div class="ticker" aria-label="Форматы съёмки"><div class="ticker-track"><span>EVENT</span><b>✳</b><span>WEDDING</span><b>✳</b><span>CLIPS</span><b>✳</b><span>COMEERASIAL ADS</span><b>✳</b><span>Reels</span><b>✳</b><span>EVENT</span><b>✳</b><span>WEDDING</span><b>✳</b><span>CLIPS</span><b>✳</b><span>COMEERASIAL ADS</span><b>✳</b><span>REELS/span><b>✳</b></div></div></div>
+<div class="ticker-shell"><div class="ticker" aria-label="Форматы съёмки"><div class="ticker-track"><span>EVENT</span><b>✳</b><span>WEDDING</span><b>✳</b><span>CLIPS</span><b>✳</b><span>COMEERASIAL ADS</span><b>✳</b><span>Reels</span><b>✳</b><span>EVENT</span><b>✳</b><span>WEDDING</span><b>✳</b><span>CLIPS</span><b>✳</b><span>COMEERASIAL ADS</span><b>✳</b><span>REELS</span><b>✳</b></div></div></div>
 <section class="references" id="references">
 <div class="section-heading"><div><p class="eyebrow">01 / Visual language</p><h2>что мы уже сняли?</h2></div><p class="count" id="count">07 frames</p></div>
 <nav class="filters" aria-label="Фильтр референсов"><button class="filter active" data-filter="All" type="button">All</button><button class="filter" data-filter="Motion" type="button">Motion</button><button class="filter" data-filter="Light" type="button">Light</button><button class="filter" data-filter="Composition" type="button">Composition</button><button class="filter" data-filter="Texture" type="button">Texture</button></nav>
@@ -59,25 +59,17 @@
 <div class="card-copy"><div><h3>Night object</h3><p>Технологичный объект в почти документальной среде</p></div><span>Texture</span></div></article>
 </div>
 </section>
-<section class="process-slide" aria-label="Что произойдёт, когда мы познакомимся"><img src="process-slide.png" alt="Этапы знакомства: креативный план, одобрение, решение задачи и счастливый клиент"></section>
-<footer><p>ЛОГНУТЫЕ / Production showreel</p><p>Reference file — ready for direction</p><a href="#top">Back to top ↑</a></footer>
-</main></div>
-<script>
-(function(){
-var cards=[].slice.call(document.querySelectorAll('.reference-card'));
-var btns=[].slice.call(document.querySelectorAll('.filter'));
-var count=document.getElementById('count');
-btns.forEach(function(b){b.addEventListener('click',function(){
- var f=b.getAttribute('data-filter'),n=0;
- btns.forEach(function(x){x.classList.toggle('active',x===b)});
- cards.forEach(function(c){var show=f==='All'||c.getAttribute('data-cat')===f;c.style.display=show?'':'none';if(show)n++});
- count.textContent=String(n).padStart(2,'0')+' frames';
-})});
-cards.forEach(function(c){var a=c.querySelector('a'),v=c.querySelector('video');
- a.addEventListener('mouseenter',function(){var p=v.play();if(p&&p.catch)p.catch(function(){})});
- a.addEventListener('mouseleave',function(){v.pause();v.currentTime=0});
-});
-})();
-</script>
-</body>
-</html>
+<section class="meet" id="meet" aria-label="Что произойдёт, когда мы познакомимся">
+  <div class="meet-inner">
+    <div class="meet-text">
+      <h2>Что произойдёт, когда мы познакомимся?</h2>
+      <ol class="meet-steps">
+        <li><span>01</span>У вас будет готовый креативный план, составленный под ваш запрос</li>
+        <li><span>02</span>Вы его одобряете</li>
+        <li><span>03</span>Мы закрываем вашу проблему</li>
+        <li><span>04</span>Вы счастливы</li>
+      </ol>
+    </div>
+    <a class="meet-btn" href="https://t.me/on_nevzorov">Газ знакомится <i>↗</i></a>
+  </div>
+</section>
